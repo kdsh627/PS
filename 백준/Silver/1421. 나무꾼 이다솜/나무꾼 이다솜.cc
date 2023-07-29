@@ -9,7 +9,7 @@ int N, C, W;
 long long count;
 long long max;
 vector<int> v;
-void binary_search(int start, int end) {
+void search(int start, int end) {
 	for (int i = start; i <= end; i++) {
 		money = 0;
 		num2 = 0;
@@ -39,7 +39,7 @@ int main() {
 		v.push_back(wood);
 	}
 	sort(v.begin(), v.end());
-	binary_search(1, v.back());
+	search(1, v.back());
 	cout << ::max;
 	return 0;
 }
