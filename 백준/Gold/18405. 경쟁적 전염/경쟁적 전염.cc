@@ -32,7 +32,7 @@ void bfs() {
             break;
         for (int k = 0; k < 4; k++) {
             if (curx + x[k] >= 1 && curx + x[k] <= N && cury + y[k] >= 1 && cury + y[k] <= N) {
-                if (!m[curx + x[k]][cury + y[k]]) { //0이 아닌곳에만 진출 가능
+                if (!m[curx + x[k]][cury + y[k]]) { //0인 곳에만 진출 가능
                     m[curx + x[k]][cury + y[k]] = m[curx][cury];
                     pq.push(make_pair(curt + 1, make_pair(curx + x[k], cury + y[k])));
                 }
