@@ -65,19 +65,5 @@ int main()
         pre = cur;
     }
 
-    while (!st2.empty())
-    {
-        INFO cur = st2.top();
-        if (cur.height < pre.height)
-        {
-            count += cur.checkTop;
-        }
-        else
-        {
-            break;
-        }
-        st2.pop();
-    }
-
     cout << count;
 }
